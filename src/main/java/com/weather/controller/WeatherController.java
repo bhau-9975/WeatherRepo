@@ -20,4 +20,11 @@ public WeatherInfo getWeather(@PathVariable String city) {
     return service.fetchWeather(city);
 }
 
+
+// For a git testing 
+@GetMapping("/{city/rep}")
+public WeatherInfo getWeatherRep(@PathVariable String city) {
+    return service.fetchWeather(city);
+}
+
 }
